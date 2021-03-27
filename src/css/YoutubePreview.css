@@ -1,0 +1,36 @@
+.preview {
+    display: flex;
+    padding: 30px 30px;
+    justify-content: space-between;
+    background-size: cover;
+}
+.preview_details {
+    width: 45rem;
+    max-width: 360px;
+    line-height: 1.3;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+}
+.preview_details h1, .preview_details p {
+    text-shadow: 4px 4px 16px #000000;
+}
+.preview_video {
+    min-width: 600px;
+}
+@media (max-width: 1080px) {
+    .preview_details {
+        margin-right: 20px;
+    }
+    .preview_video {
+        min-width: 400px;
+    }
+}
+@media (max-width: 765px) {
+    .preview {
+        flex-direction: column;
+    }
+    .preview_video {
+        min-width: 400px;
+        margin-top: 30px;
+    }
+}
